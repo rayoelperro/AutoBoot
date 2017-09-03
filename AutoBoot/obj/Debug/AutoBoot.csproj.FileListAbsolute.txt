@@ -1,0 +1,9 @@
+D:\Proyectos\VisualStudio\AutoBoot\AutoBoot\bin\Debug\AutoBoot.exe.config
+D:\Proyectos\VisualStudio\AutoBoot\AutoBoot\bin\Debug\AutoBoot.exe
+D:\Proyectos\VisualStudio\AutoBoot\AutoBoot\bin\Debug\AutoBoot.pdb
+D:\Proyectos\VisualStudio\AutoBoot\AutoBoot\obj\Debug\AutoBoot.csprojResolveAssemblyReference.cache
+D:\Proyectos\VisualStudio\AutoBoot\AutoBoot\obj\Debug\AutoBoot.Form1.resources
+D:\Proyectos\VisualStudio\AutoBoot\AutoBoot\obj\Debug\AutoBoot.Properties.Resources.resources
+D:\Proyectos\VisualStudio\AutoBoot\AutoBoot\obj\Debug\AutoBoot.csproj.GenerateResource.Cache
+D:\Proyectos\VisualStudio\AutoBoot\AutoBoot\obj\Debug\AutoBoot.exe
+D:\Proyectos\VisualStudio\AutoBoot\AutoBoot\obj\Debug\AutoBoot.pdb

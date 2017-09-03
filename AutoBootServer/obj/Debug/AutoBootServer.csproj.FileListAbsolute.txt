@@ -1,0 +1,6 @@
+D:\Proyectos\VisualStudio\AutoBoot\AutoBootServer\bin\Debug\AutoBootServer.exe.config
+D:\Proyectos\VisualStudio\AutoBoot\AutoBootServer\bin\Debug\AutoBootServer.exe
+D:\Proyectos\VisualStudio\AutoBoot\AutoBootServer\bin\Debug\AutoBootServer.pdb
+D:\Proyectos\VisualStudio\AutoBoot\AutoBootServer\obj\Debug\AutoBootServer.csprojResolveAssemblyReference.cache
+D:\Proyectos\VisualStudio\AutoBoot\AutoBootServer\obj\Debug\AutoBootServer.exe
+D:\Proyectos\VisualStudio\AutoBoot\AutoBootServer\obj\Debug\AutoBootServer.pdb
