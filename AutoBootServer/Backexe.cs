@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.IO;
 using System.Threading;
+using System.Runtime.InteropServices;
 
 namespace AutoBootServer
 {
@@ -12,9 +13,9 @@ namespace AutoBootServer
         private static string getCSC()
         {
             if (Environment.Is64BitOperatingSystem)
-                return System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeDirectory().Replace("Framework", "Framework64") + @"csc.exe";
+                return RuntimeEnvironment.GetRuntimeDirectory().Replace("Framework", "Framework64") + @"csc.exe";
             else
-                return System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeDirectory() + @"csc.exe";
+                return RuntimeEnvironment.GetRuntimeDirectory() + @"csc.exe";
         }
 
         public static void CompileCode(string code)

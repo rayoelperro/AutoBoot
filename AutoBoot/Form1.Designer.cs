@@ -30,11 +30,11 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.connectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.startConnectionAndSendMessageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.startConnectionAndSendMessageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -59,6 +59,13 @@
             this.connectionToolStripMenuItem.Name = "connectionToolStripMenuItem";
             this.connectionToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
             this.connectionToolStripMenuItem.Text = "Connection";
+            // 
+            // startConnectionAndSendMessageToolStripMenuItem
+            // 
+            this.startConnectionAndSendMessageToolStripMenuItem.Name = "startConnectionAndSendMessageToolStripMenuItem";
+            this.startConnectionAndSendMessageToolStripMenuItem.Size = new System.Drawing.Size(264, 22);
+            this.startConnectionAndSendMessageToolStripMenuItem.Text = "Start Connection and Send Message";
+            this.startConnectionAndSendMessageToolStripMenuItem.Click += new System.EventHandler(this.startConnectionAndSendMessageToolStripMenuItem_Click);
             // 
             // splitContainer1
             // 
@@ -88,15 +95,6 @@
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
-            // richTextBox2
-            // 
-            this.richTextBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox2.Location = new System.Drawing.Point(0, 0);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(284, 62);
-            this.richTextBox2.TabIndex = 0;
-            this.richTextBox2.Text = "";
-            // 
             // textBox1
             // 
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -105,12 +103,14 @@
             this.textBox1.Size = new System.Drawing.Size(284, 20);
             this.textBox1.TabIndex = 1;
             // 
-            // startConnectionAndSendMessageToolStripMenuItem
+            // richTextBox2
             // 
-            this.startConnectionAndSendMessageToolStripMenuItem.Name = "startConnectionAndSendMessageToolStripMenuItem";
-            this.startConnectionAndSendMessageToolStripMenuItem.Size = new System.Drawing.Size(264, 22);
-            this.startConnectionAndSendMessageToolStripMenuItem.Text = "Start Connection and Send Message";
-            this.startConnectionAndSendMessageToolStripMenuItem.Click += new System.EventHandler(this.startConnectionAndSendMessageToolStripMenuItem_Click);
+            this.richTextBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBox2.Location = new System.Drawing.Point(0, 0);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(284, 62);
+            this.richTextBox2.TabIndex = 0;
+            this.richTextBox2.Text = "";
             // 
             // Form1
             // 
