@@ -81,15 +81,21 @@ namespace AutoBootServer
             if (File.Exists(Path.GetTempPath() + name))
                 File.Delete(Path.GetTempPath() + name);
             File.WriteAllText(Path.GetTempPath() + prname, code);
-            Process.Start(compiler, args);
-            Thread.Sleep(2000);
-            Process.Start(Path.GetTempPath() + name);
+            ProcessStartInfo psi = new ProcessStartInfo(compiler, args);
+            psi.WorkingDirectory = Path.GetTempPath();
+            Process.Start(psi);
+            Thread.Sleep(4000);
+            ProcessStartInfo ps2 = new ProcessStartInfo(Path.GetTempPath() + name);
+            ps2.WorkingDirectory = Path.GetTempPath();
+            Process.Start(ps2);
         }
 
         public static void CompileCode(string code, string compiler, string name)
         {
             File.WriteAllText(Path.GetTempPath() + name, code);
-            Process.Start(compiler, Path.GetTempPath() + name);
+            ProcessStartInfo psi = new ProcessStartInfo(compiler, Path.GetTempPath() + name);
+            psi.WorkingDirectory = Path.GetTempPath();
+            Process.Start(psi);
         }
     }
 }

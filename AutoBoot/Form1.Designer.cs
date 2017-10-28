@@ -35,12 +35,12 @@
             this.cToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vbToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pythonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mediaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sendFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.mediaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sendFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -65,13 +65,13 @@
             this.connectionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.startConnectionAndSendMessageToolStripMenuItem});
             this.connectionToolStripMenuItem.Name = "connectionToolStripMenuItem";
-            this.connectionToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
-            this.connectionToolStripMenuItem.Text = "Connection";
+            this.connectionToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
+            this.connectionToolStripMenuItem.Text = "Code";
             // 
             // startConnectionAndSendMessageToolStripMenuItem
             // 
             this.startConnectionAndSendMessageToolStripMenuItem.Name = "startConnectionAndSendMessageToolStripMenuItem";
-            this.startConnectionAndSendMessageToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.startConnectionAndSendMessageToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.startConnectionAndSendMessageToolStripMenuItem.Text = "Send Code";
             this.startConnectionAndSendMessageToolStripMenuItem.Click += new System.EventHandler(this.startConnectionAndSendMessageToolStripMenuItem_Click);
             // 
@@ -88,23 +88,38 @@
             // cToolStripMenuItem
             // 
             this.cToolStripMenuItem.Name = "cToolStripMenuItem";
-            this.cToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.cToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.cToolStripMenuItem.Text = "c#";
             this.cToolStripMenuItem.Click += new System.EventHandler(this.cToolStripMenuItem_Click);
             // 
             // vbToolStripMenuItem
             // 
             this.vbToolStripMenuItem.Name = "vbToolStripMenuItem";
-            this.vbToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.vbToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.vbToolStripMenuItem.Text = "vb";
             this.vbToolStripMenuItem.Click += new System.EventHandler(this.vbToolStripMenuItem_Click);
             // 
             // pythonToolStripMenuItem
             // 
             this.pythonToolStripMenuItem.Name = "pythonToolStripMenuItem";
-            this.pythonToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.pythonToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.pythonToolStripMenuItem.Text = "python";
             this.pythonToolStripMenuItem.Click += new System.EventHandler(this.pythonToolStripMenuItem_Click);
+            // 
+            // mediaToolStripMenuItem
+            // 
+            this.mediaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sendFileToolStripMenuItem});
+            this.mediaToolStripMenuItem.Name = "mediaToolStripMenuItem";
+            this.mediaToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.mediaToolStripMenuItem.Text = "Media";
+            // 
+            // sendFileToolStripMenuItem
+            // 
+            this.sendFileToolStripMenuItem.Name = "sendFileToolStripMenuItem";
+            this.sendFileToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.sendFileToolStripMenuItem.Text = "Send File";
+            this.sendFileToolStripMenuItem.Click += new System.EventHandler(this.sendFileToolStripMenuItem_Click);
             // 
             // splitContainer1
             // 
@@ -150,21 +165,6 @@
             this.richTextBox2.Size = new System.Drawing.Size(284, 62);
             this.richTextBox2.TabIndex = 0;
             this.richTextBox2.Text = "";
-            // 
-            // mediaToolStripMenuItem
-            // 
-            this.mediaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.sendFileToolStripMenuItem});
-            this.mediaToolStripMenuItem.Name = "mediaToolStripMenuItem";
-            this.mediaToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
-            this.mediaToolStripMenuItem.Text = "Media";
-            // 
-            // sendFileToolStripMenuItem
-            // 
-            this.sendFileToolStripMenuItem.Name = "sendFileToolStripMenuItem";
-            this.sendFileToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.sendFileToolStripMenuItem.Text = "Send File";
-            this.sendFileToolStripMenuItem.Click += new System.EventHandler(this.sendFileToolStripMenuItem_Click);
             // 
             // Form1
             // 
