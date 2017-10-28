@@ -31,14 +31,16 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.connectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.startConnectionAndSendMessageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.useToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vbToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pythonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.mediaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sendFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -50,7 +52,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.connectionToolStripMenuItem,
-            this.useToolStripMenuItem});
+            this.useToolStripMenuItem,
+            this.mediaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(284, 24);
@@ -68,9 +71,40 @@
             // startConnectionAndSendMessageToolStripMenuItem
             // 
             this.startConnectionAndSendMessageToolStripMenuItem.Name = "startConnectionAndSendMessageToolStripMenuItem";
-            this.startConnectionAndSendMessageToolStripMenuItem.Size = new System.Drawing.Size(264, 22);
-            this.startConnectionAndSendMessageToolStripMenuItem.Text = "Start Connection and Send Message";
+            this.startConnectionAndSendMessageToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.startConnectionAndSendMessageToolStripMenuItem.Text = "Send Code";
             this.startConnectionAndSendMessageToolStripMenuItem.Click += new System.EventHandler(this.startConnectionAndSendMessageToolStripMenuItem_Click);
+            // 
+            // useToolStripMenuItem
+            // 
+            this.useToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cToolStripMenuItem,
+            this.vbToolStripMenuItem,
+            this.pythonToolStripMenuItem});
+            this.useToolStripMenuItem.Name = "useToolStripMenuItem";
+            this.useToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
+            this.useToolStripMenuItem.Text = "Use";
+            // 
+            // cToolStripMenuItem
+            // 
+            this.cToolStripMenuItem.Name = "cToolStripMenuItem";
+            this.cToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.cToolStripMenuItem.Text = "c#";
+            this.cToolStripMenuItem.Click += new System.EventHandler(this.cToolStripMenuItem_Click);
+            // 
+            // vbToolStripMenuItem
+            // 
+            this.vbToolStripMenuItem.Name = "vbToolStripMenuItem";
+            this.vbToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.vbToolStripMenuItem.Text = "vb";
+            this.vbToolStripMenuItem.Click += new System.EventHandler(this.vbToolStripMenuItem_Click);
+            // 
+            // pythonToolStripMenuItem
+            // 
+            this.pythonToolStripMenuItem.Name = "pythonToolStripMenuItem";
+            this.pythonToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.pythonToolStripMenuItem.Text = "python";
+            this.pythonToolStripMenuItem.Click += new System.EventHandler(this.pythonToolStripMenuItem_Click);
             // 
             // splitContainer1
             // 
@@ -117,36 +151,20 @@
             this.richTextBox2.TabIndex = 0;
             this.richTextBox2.Text = "";
             // 
-            // useToolStripMenuItem
+            // mediaToolStripMenuItem
             // 
-            this.useToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cToolStripMenuItem,
-            this.vbToolStripMenuItem,
-            this.pythonToolStripMenuItem});
-            this.useToolStripMenuItem.Name = "useToolStripMenuItem";
-            this.useToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
-            this.useToolStripMenuItem.Text = "Use";
+            this.mediaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sendFileToolStripMenuItem});
+            this.mediaToolStripMenuItem.Name = "mediaToolStripMenuItem";
+            this.mediaToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.mediaToolStripMenuItem.Text = "Media";
             // 
-            // cToolStripMenuItem
+            // sendFileToolStripMenuItem
             // 
-            this.cToolStripMenuItem.Name = "cToolStripMenuItem";
-            this.cToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.cToolStripMenuItem.Text = "c#";
-            this.cToolStripMenuItem.Click += new System.EventHandler(this.cToolStripMenuItem_Click);
-            // 
-            // vbToolStripMenuItem
-            // 
-            this.vbToolStripMenuItem.Name = "vbToolStripMenuItem";
-            this.vbToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.vbToolStripMenuItem.Text = "vb";
-            this.vbToolStripMenuItem.Click += new System.EventHandler(this.vbToolStripMenuItem_Click);
-            // 
-            // pythonToolStripMenuItem
-            // 
-            this.pythonToolStripMenuItem.Name = "pythonToolStripMenuItem";
-            this.pythonToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.pythonToolStripMenuItem.Text = "python";
-            this.pythonToolStripMenuItem.Click += new System.EventHandler(this.pythonToolStripMenuItem_Click);
+            this.sendFileToolStripMenuItem.Name = "sendFileToolStripMenuItem";
+            this.sendFileToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.sendFileToolStripMenuItem.Text = "Send File";
+            this.sendFileToolStripMenuItem.Click += new System.EventHandler(this.sendFileToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -184,6 +202,8 @@
         private System.Windows.Forms.ToolStripMenuItem cToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem vbToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pythonToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mediaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sendFileToolStripMenuItem;
     }
 }
 

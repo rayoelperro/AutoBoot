@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Net.Sockets;
+using System.Text;
 using System.Windows.Forms;
 
 namespace AutoBoot
@@ -44,6 +45,20 @@ namespace AutoBoot
         private void pythonToolStripMenuItem_Click(object sender, EventArgs e)
         {
             send("python");
+        }
+
+        private void sendFileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            if(ofd.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    byte[] binarydata = File.ReadAllBytes(ofd.FileName);
+                    send("FILE\n" + new FileInfo(ofd.FileName).Name + "\n" + Encoding.Default.GetString(binarydata));
+                }
+                catch (Exception) { MessageBox.Show("Error leyendo el archivo", "Error leyendo " + ofd.FileName, MessageBoxButtons.OK, MessageBoxIcon.Error); }
+            }
         }
     }
 }

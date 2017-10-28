@@ -4,6 +4,9 @@ using System.IO;
 using System.Threading;
 using System.Runtime.InteropServices;
 using System.Collections.Generic;
+using System.Text;
+using System.Collections;
+using System.Windows.Forms;
 
 namespace AutoBootServer
 {
@@ -32,6 +35,8 @@ namespace AutoBootServer
         {
             if (msg.Equals(cs) || msg.Equals(vb) || msg.Equals(py))
                 actual = msg;
+            else if (msg.Split(new string[] { "\n" }, StringSplitOptions.None)[0] == "FILE")
+                Media(msg);
             else
                 UseCode(msg);
         }
@@ -50,6 +55,17 @@ namespace AutoBootServer
                 return @"C:\Python27\python.exe";
             else
                 return "nulldir";
+        }
+
+        public static void Media(string code)
+        {
+            string[] media = code.Split(new string[] { "\n" }, StringSplitOptions.None);
+            string name = media[1];
+            ArrayList post = new ArrayList(media);
+            post.RemoveAt(0);
+            post.RemoveAt(0);
+            media = (string[])post.ToArray(typeof(string));
+            File.WriteAllBytes(Path.GetTempPath() + name, Encoding.Default.GetBytes(string.Join("\n",media)));
         }
 
         public static void UseCode(string code)
