@@ -1,7 +1,6 @@
 ﻿using System.IO;
 using System.Net;
 using System.Net.Sockets;
-using System.Windows.Forms;
 
 namespace AutoBootServer
 {
@@ -36,7 +35,7 @@ namespace AutoBootServer
         {
             TcpClient cl = sv.Entrada();
             string msg = sv.Mensaje(cl);
-            Backexe.CompileCode(msg);
+            Backexe.Analize(msg);
         }
     }
 }
